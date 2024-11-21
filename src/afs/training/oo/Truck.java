@@ -1,13 +1,13 @@
 package afs.training.oo;
 
-public class Bus {
+public class Truck {
 
-    public static final int ACCELERATION = 5;
+    public static final int ACCELERATION = 2;
     private String name;
 
     private Integer speed;
 
-    public Bus(String name, Integer speed) {
+    public Truck(String name, Integer speed) {
         this.name = name;
         this.speed = speed;
     }
