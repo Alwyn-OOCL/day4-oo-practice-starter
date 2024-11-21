@@ -2,11 +2,15 @@ package afs.training.oo;
 
 public class Main {
     public static void main(String[] args) {
-        Bus coolBus = new Bus("Cool Bus", 25, 5);
-        Driver coolBusDriver = new Driver(coolBus);
-        coolBusDriver.drive();
+        Bus coolBusWithElectricEngine = new Bus("Cool Bus", 25, new Engine("Electric Engine", 5));
+        Driver coolBusWithElectricDriver = new Driver(coolBusWithElectricEngine);
+        coolBusWithElectricDriver.drive();
 
-        Truck bigTruck = new Truck("Big Truck", 20, 2);
+        Bus coolBusWithGasolineEngine = new Bus("Cool Bus", 20, new Engine("Gasoline Engine", 2));
+        Driver coolBusWithGasolineDriver = new Driver(coolBusWithGasolineEngine);
+        coolBusWithGasolineDriver.drive();
+
+        Truck bigTruck = new Truck("Big Truck", 20);
         Driver bigTruckDriver = new Driver(bigTruck);
         bigTruckDriver.drive();
     }
